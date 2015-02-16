@@ -1,0 +1,53 @@
+/* Tiny Carousel */
+#slider1 {height: 1%; overflow: hidden; position: relative; width: 416px; height: 355px;}
+#slider1 .viewport {width: 368px; height: 355px; overflow: hidden;}
+#slider1 .buttons,
+#slider2 .buttons {
+	background-image: url(../images/buttons.png);
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -999em;
+	width: 33px;
+	height: 32px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+#slider1 .prev,
+#slider2 .prev {
+	top: 0;
+	right: 0;
+	z-index: 1;
+	background-position: 0 0;
+}
+#slider1 .prev:hover,
+#slider2 .prev:hover {background-position: -33px 0;}
+#slider1 .next,
+#slider2 .next {
+	bottom: 0;
+	background-position: 0 -32px;
+}
+#slider1 .next:hover,
+#slider2 .next:hover {background-position: -33px -32px;}
+#slider1 .disable,
+#slider2 .disable {visibility: hidden;}
+#slider1 .overview {list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; width: 368px;	height: 355px;}
+#slider1 .overview li {
+	background: none;
+	width: 368px;
+	height: 355px;
+	padding: 0;
+	overflow: hidden;
+}
+/*slider2*/
+#slider2 {height: 1%; overflow: hidden; position: relative; width: 400px; height: 337px;}
+#slider2 .viewport {width: 352px; height: 337px; overflow: hidden;}
+#slider2 .overview {list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; width: 352px;	height: 337px;}
+#slider2 .overview li {
+	background: none;
+	width: 352px;
+	height: 337px;
+	padding: 0;
+	overflow: hidden;
+}
