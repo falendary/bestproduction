@@ -4,18 +4,18 @@ var ua = navigator.userAgent,
 
 $(document).ready(function(){
 	
-	var wh = $('.wrapper-holder').height(),
-			windh = $(window).height() - $('.header-top-wide').height(),
-			padtop = (windh - wh) / 2;
-	$('.wrapper-holder').css('padding-top', padtop);		
-	//
-	$(window).on('resize', function() {
-		var wh = $('.wrapper-holder').height(),
-			windh = $(window).height() - $('.header-top-wide').height(),
-			padtop = (windh - wh) / 2;
-		$('.wrapper-holder').css('padding-top', padtop);
-	});
-	//
+	// var wh = $('.wrapper-holder').height(),
+	// 		windh = $(window).height() - $('.header-top-wide').height(),
+	// 		padtop = (windh - wh) / 2;
+	// $('.wrapper-holder').css('padding-top', padtop);		
+	// //
+	// $(window).on('resize', function() {
+	// 	var wh = $('.wrapper-holder').height(),
+	// 		windh = $(window).height() - $('.header-top-wide').height(),
+	// 		padtop = (windh - wh) / 2;
+	// 	$('.wrapper-holder').css('padding-top', padtop);
+	// });
+	// //
 	/*
 	Суперклассный код для работы вкладок в портфолио. Классы нужно будет вернуть, если чё
 	$('.categories a').on('click', function() {
@@ -32,13 +32,13 @@ $(document).ready(function(){
 		return false;
 	});*/
 	//
-	$('.case-item').on('click', function() {
-		var $this = $(this);
-		var curid = $this.attr('data-id');
-		$('.gallery-block a.fancybox[id]').hide();
-		$('#'+ curid).fadeIn(700);
-		return false;
-	});
+	// $('.case-item').on('click', function() {
+	// 	var $this = $(this);
+	// 	var curid = $this.attr('data-id');
+	// 	$('.gallery-block a.fancybox[id]').hide();
+	// 	$('#'+ curid).fadeIn(700);
+	// 	return false;
+	// });
 	//
 	$('.portfolio').on('mouseover', function() {
 		$('.portf-links').css('display','block');
