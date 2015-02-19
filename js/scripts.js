@@ -53,6 +53,17 @@ $(document).ready(function(){
 		$('.portf-links').css('display','none');
 	});
 	//
+	$('.bx-carousel').bxSlider({
+	    mode: 'vertical',
+	    minSlides: 2,
+	    slideMargin: 10,
+	    adaptiveHeight: true,
+	    pager: false,
+	    nextText: '',
+	    prevText: '',
+	    nextSelector: $('#cycledown'),
+	    prevSelector: $('#cycleup')
+	  });
 	$('.fancybox').fancybox();
 	//
 	$('#slider1, #slider2').tinycarousel({

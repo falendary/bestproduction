@@ -135,11 +135,11 @@ ul.social-footer {
 	overflow: hidden;
 	width: 110px;
 	height: 26px;
-	margin: 14px 6% 0 0;
+	margin: 14px 30px 0 0;
 	float: right;
 }
 ul.social-footer li {
-	float: left;
+	float: right;
 	margin-right: 2px;
 }
 ul.social-footer li a {
@@ -176,7 +176,7 @@ ul.social-footer li:last-child {margin-right: 0;}
 }
 .wrap-row:first-child {margin-bottom: 2px;}
 .left-link-holder {
-	width: 149px;
+	width: 109px;
 	float: left;
 	margin-right: 2px;
 	margin: 0 auto;
@@ -213,8 +213,8 @@ ul.social-footer li:last-child {margin-right: 0;}
 	background-repeat: no-repeat;
 	background-position: center center;
 	display: block;
-	width: 149px;
-	height: 144.5px;
+	width: 109px;
+	height: 109px;
 	position: relative;
 	text-align: center;
 	color: #fff;
@@ -327,7 +327,7 @@ header
 .main-container {
 /*	width: 832px;
 	height: 418px;*/
-	width: calc(100% - 151px);
+	width: calc(100% - 115px);
 	float: left;
 	box-sizing: border-box;
 	padding: 20px 36px;
@@ -625,14 +625,20 @@ ul.conts li a:hover {text-decoration: none;}
 }
 .case-item img
 {
-	width: 176px;
-	height: 136px;
+	width: 162px;
+	height: 126px;
+	border: 7px solid transparent;
+}
+.case-item:hover img
+{
+	border: 7px solid #2daef0;
 }
 .case-item a
 {
 	color: #2f83b0;
 	font-family: "OpenSans-Bold";
 	text-decoration: underline;
+	padding: 0 0 0 7px;
 }
 .case-item a:hover
 {
@@ -678,7 +684,7 @@ ul.conts li a:hover {text-decoration: none;}
 	}
 	/*contacts*/
 	.main-container {
-		height: 408px;
+		height: 420px;
 		padding: 20px 36px;
 	}
 	/*portfolio*/
@@ -746,13 +752,13 @@ ul.conts li a:hover {text-decoration: none;}
 }
 .category-holder
 {
-	width: calc(100% - 106px);
+	width: calc(100% - 90px);
 	float: left;
 }
 .category-lift
 {
 	float: right;
-	height: 530px;
+	height: 390px;
 	position: relative;
 	width: 80px;
 }
@@ -795,4 +801,16 @@ ul.conts li a:hover {text-decoration: none;}
 	left: 30px;
 	bottom: 0;
 	background-image: url(../images/arrow-down-btn.png);
+}
+.wrapper-new.inner.page .wrap-row
+{
+	width: 100px;
+}
+.bx-carousel
+{
+	height: 320px;
+}
+.bx-viewport
+{
+	height: 320px;
 }
