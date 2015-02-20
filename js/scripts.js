@@ -3,7 +3,7 @@ var ua = navigator.userAgent,
     clickevent = (ua.match(/iPad/i)) ? "touchstart" : "click";
 
 $(document).ready(function(){
-	
+	'use strict';
 	// var wh = $('.wrapper-holder').height(),
 	// 		windh = $(window).height() - $('.header-top-wide').height(),
 	// 		padtop = (windh - wh) / 2;
@@ -52,21 +52,26 @@ $(document).ready(function(){
 	$('.portf-links').on('mouseleave', function() {
 		$('.portf-links').css('display','none');
 	});
-	//
+
 	$('.bx-carousel').bxSlider({
 	    mode: 'vertical',
 	    minSlides: 2,
-	    slideMargin: 10,
+	    slideMargin: 0,
 	    adaptiveHeight: true,
 	    pager: false,
 	    nextText: '',
 	    prevText: '',
-	    nextSelector: $('#cycledown'),
-	    prevSelector: $('#cycleup')
+	    nextSelector: '#cycledown',
+	    prevSelector: '#cycleup'
 	  });
-	$('.fancybox').fancybox();
-	//
-	$('#slider1, #slider2').tinycarousel({
+
+	$('.case-item .fancybox').fancybox(
+	{
+		maxWidth: 794
+	}
+	);
+	
+	$('#slider1').tinycarousel({
 		bullets   : true,
 		buttons   : false,
 		axis   : "y",
